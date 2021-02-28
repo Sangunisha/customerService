@@ -1,0 +1,17 @@
+com.inteview.banking.customerService
+com.inteview.banking.customerService.account.controller
+com.inteview.banking.customerService.account.domain
+com.inteview.banking.customerService.account.dto
+com.inteview.banking.customerService.account.repo
+com.inteview.banking.customerService.account.service
+com.inteview.banking.customerService.base.domain
+com.inteview.banking.customerService.base.dto
+com.inteview.banking.customerService.base.exceptions
+com.inteview.banking.customerService.base.service
+com.inteview.banking.customerService.base.util
+com.inteview.banking.customerService.constants
+com.inteview.banking.customerService.customer.controller
+com.inteview.banking.customerService.customer.domain
+com.inteview.banking.customerService.customer.dto
+com.inteview.banking.customerService.customer.repo
+com.inteview.banking.customerService.customer.service
