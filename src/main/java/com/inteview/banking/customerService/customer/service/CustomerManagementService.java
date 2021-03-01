@@ -198,13 +198,17 @@ public class CustomerManagementService extends AbstractService<Customer, Custome
     /**
      * Updates the customer
      *
+     *
+     * @param customerId
      * @param customer
      * @return
      */
-    public CustomerDTO updateCustomer(CustomerDTO customer) {
-        customer = update(customer);
-        logger.info("Updated the customer with id :" + customer.getCustomerId());
-        return customer;
+    public CustomerDTO updateCustomer(String customerId, CustomerDTO customer) {
+        Customer existingCustomer = getEntity(customerId);
+        existingCustomer = updateModifiedParams(customer, existingCustomer);
+        existingCustomer = updateEntity(existingCustomer);
+        logger.info("Updated the customer with id :" + existingCustomer.getUserId());
+        return getDTO(existingCustomer, getNewDTO());
     }
 
     /**

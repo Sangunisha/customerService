@@ -75,7 +75,7 @@ public class CustomerController {
      */
     @PutMapping("/{customerId}")
     public CustomerDTO updateCustomer(@PathVariable("customerId") String customerId, @RequestBody CustomerDTO customer) {
-        return customerManagementService.updateCustomer(customer);
+        return customerManagementService.updateCustomer(customerId, customer);
     }
 
     /**
